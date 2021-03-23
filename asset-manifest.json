@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/shop_mobile/static/css/main.3596d7e0.chunk.css",
-    "main.js": "/shop_mobile/static/js/main.0d3cd975.chunk.js",
-    "main.js.map": "/shop_mobile/static/js/main.0d3cd975.chunk.js.map",
+    "main.css": "/shop_mobile/static/css/main.725da742.chunk.css",
+    "main.js": "/shop_mobile/static/js/main.5a6a79de.chunk.js",
+    "main.js.map": "/shop_mobile/static/js/main.5a6a79de.chunk.js.map",
     "runtime-main.js": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js",
     "runtime-main.js.map": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js.map",
-    "static/js/2.315587e7.chunk.js": "/shop_mobile/static/js/2.315587e7.chunk.js",
-    "static/js/2.315587e7.chunk.js.map": "/shop_mobile/static/js/2.315587e7.chunk.js.map",
+    "static/js/2.9bd8c82e.chunk.js": "/shop_mobile/static/js/2.9bd8c82e.chunk.js",
+    "static/js/2.9bd8c82e.chunk.js.map": "/shop_mobile/static/js/2.9bd8c82e.chunk.js.map",
     "index.html": "/shop_mobile/index.html",
-    "static/css/main.3596d7e0.chunk.css.map": "/shop_mobile/static/css/main.3596d7e0.chunk.css.map",
-    "static/js/2.315587e7.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.315587e7.chunk.js.LICENSE.txt"
+    "static/css/main.725da742.chunk.css.map": "/shop_mobile/static/css/main.725da742.chunk.css.map",
+    "static/js/2.9bd8c82e.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.9bd8c82e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0dfc7ccc.js",
-    "static/js/2.315587e7.chunk.js",
-    "static/css/main.3596d7e0.chunk.css",
-    "static/js/main.0d3cd975.chunk.js"
+    "static/js/2.9bd8c82e.chunk.js",
+    "static/css/main.725da742.chunk.css",
+    "static/js/main.5a6a79de.chunk.js"
   ]
 }
