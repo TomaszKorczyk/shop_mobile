@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/shop_mobile/static/css/main.224e7334.chunk.css",
-    "main.js": "/shop_mobile/static/js/main.da9af043.chunk.js",
-    "main.js.map": "/shop_mobile/static/js/main.da9af043.chunk.js.map",
+    "main.css": "/shop_mobile/static/css/main.9c6f0d13.chunk.css",
+    "main.js": "/shop_mobile/static/js/main.b568bd04.chunk.js",
+    "main.js.map": "/shop_mobile/static/js/main.b568bd04.chunk.js.map",
     "runtime-main.js": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js",
     "runtime-main.js.map": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js.map",
     "static/js/2.22cf2229.chunk.js": "/shop_mobile/static/js/2.22cf2229.chunk.js",
     "static/js/2.22cf2229.chunk.js.map": "/shop_mobile/static/js/2.22cf2229.chunk.js.map",
     "index.html": "/shop_mobile/index.html",
-    "static/css/main.224e7334.chunk.css.map": "/shop_mobile/static/css/main.224e7334.chunk.css.map",
+    "static/css/main.9c6f0d13.chunk.css.map": "/shop_mobile/static/css/main.9c6f0d13.chunk.css.map",
     "static/js/2.22cf2229.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.22cf2229.chunk.js.LICENSE.txt",
     "static/media/puzzle.a8e67b30.svg": "/shop_mobile/static/media/puzzle.a8e67b30.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0dfc7ccc.js",
     "static/js/2.22cf2229.chunk.js",
-    "static/css/main.224e7334.chunk.css",
-    "static/js/main.da9af043.chunk.js"
+    "static/css/main.9c6f0d13.chunk.css",
+    "static/js/main.b568bd04.chunk.js"
   ]
 }
