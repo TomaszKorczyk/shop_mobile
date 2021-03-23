@@ -1,21 +1,77 @@
 {
-    "editor.formatOnSaveMode": "modifications",
-    "emmet.showExpandedAbbreviation": "always",
-    "emmet.showSuggestionsAsSnippets": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "php.validate.executablePath": "C:/wamp64/bin/php/php7.4.0/php.exe",
+    "window.zoomLevel": 0,
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false,
-    "tailwindCSS.includeLanguages": {
+    "projectManager.git.baseFolders": [
+        "D:\\Nauka\\VS\\git"
+    ],
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "*.css": "css"
+    },
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "editor.linkedEditing": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        // "editor.defaultFormatter":"sidharthachatterjee.vscode-tailwindcss",
+        "editor.defaultFormatter": "bradlc.vscode-tailwindcss",
+    },
+    "[tailwindCSS.includeLanguages]": {
+        "editor.defaultFormatter": "bradlc.vscode-tailwindcss",
         "plaintext": "html"
     },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.codeLens": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
     "tailwindCSS.emmetCompletions": true,
-    "html-css-class-completion.enableEmmetSupport": true,
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "hmtl"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
     "emmet.includeLanguages": {
         "javascriptreact": "html",
         "javascript": "javascriptreact"
     },
+    "emmet.excludeLanguages": [
+        "markdown"
+    ],
     "css.lint.validProperties": [
         "@apply",
         "@tailwind"
     ],
+    "html-css-class-completion.CSSLanguages": [
+        "css",
+        "sass",
+        "scss"
+    ],
+    "html-css-class-completion.enableEmmetSupport": true,
+    "prettier.htmlWhitespaceSensitivity": "ignore"
 }
