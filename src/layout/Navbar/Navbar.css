@@ -1,0 +1,15 @@
+.NavbarItems {
+    @apply bg-yellow-500 text-xl flex justify-between min-h-full min-w-full overflow-hidden transition duration-500 sticky top-0;
+}
+
+.nav-menu {
+    @apply flex justify-around w-5/12 items-center;
+}
+
+.nav-links {
+    @apply text-gray-800 cursor-pointer;
+}
+
+.nav-links:hover {
+    @apply text-white;
+}
