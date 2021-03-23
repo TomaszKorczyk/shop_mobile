@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shop_mobile/static/css/main.725da742.chunk.css",
+    "main.css": "/shop_mobile/static/css/main.44756c59.chunk.css",
     "main.js": "/shop_mobile/static/js/main.5a6a79de.chunk.js",
     "main.js.map": "/shop_mobile/static/js/main.5a6a79de.chunk.js.map",
     "runtime-main.js": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js",
@@ -8,13 +8,13 @@
     "static/js/2.9bd8c82e.chunk.js": "/shop_mobile/static/js/2.9bd8c82e.chunk.js",
     "static/js/2.9bd8c82e.chunk.js.map": "/shop_mobile/static/js/2.9bd8c82e.chunk.js.map",
     "index.html": "/shop_mobile/index.html",
-    "static/css/main.725da742.chunk.css.map": "/shop_mobile/static/css/main.725da742.chunk.css.map",
+    "static/css/main.44756c59.chunk.css.map": "/shop_mobile/static/css/main.44756c59.chunk.css.map",
     "static/js/2.9bd8c82e.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.9bd8c82e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0dfc7ccc.js",
     "static/js/2.9bd8c82e.chunk.js",
-    "static/css/main.725da742.chunk.css",
+    "static/css/main.44756c59.chunk.css",
     "static/js/main.5a6a79de.chunk.js"
   ]
 }
