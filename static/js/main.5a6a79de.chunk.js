@@ -1,2 +1,0 @@
-(this.webpackJsonpshop_mobile=this.webpackJsonpshop_mobile||[]).push([[0],{23:function(e,t,n){"use strict";n.r(t);n(0);var o=n(10),s=n.n(o),c=(n(8),n(12)),r=n(3);var i=function(){return Object(r.jsx)(c.a,{})};s.a.render(Object(r.jsx)(i,{}),document.getElementById("root"))},8:function(e,t,n){}},[[23,1,2]]]);
-//# sourceMappingURL=main.5a6a79de.chunk.js.map
