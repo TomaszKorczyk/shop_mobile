@@ -38,7 +38,7 @@ class Navbar extends Component {
             return (
               <li key={index}>
                 <a
-                  className={`${item.cName} dark:text-white dark:night`}
+                  className={`${item.cName} dark:text-white dark:hover:text-yellow-300`}
                   href={item.url}
                 >
                   {item.title}
