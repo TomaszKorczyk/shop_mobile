@@ -1,0 +1,21 @@
+{
+    "editor.formatOnSaveMode": "modifications",
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.showSuggestionsAsSnippets": true,
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html"
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "emmet.includeLanguages": {
+        "javascriptreact": "html",
+        "javascript": "javascriptreact"
+    },
+    "css.lint.validProperties": [
+        "@apply",
+        "@tailwind"
+    ],
+}
