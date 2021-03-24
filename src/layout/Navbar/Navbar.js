@@ -17,7 +17,7 @@ class Navbar extends Component {
         <div className="flex justify-items-start items-center mx-2 w-4/12 min-h-full">
           <h1 className="text-2xl font-semibold dark:text-white">Sensoryka</h1>
           <img
-            className="bg-green-700 dark:bg-yellow-300 opacity-80 hover:opacity-100 rounded text-2xl m-2 transition duration-300"
+            className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 rounded text-2xl m-2 transition duration-300"
             src={puzzle}
             alt="logo"
           />
