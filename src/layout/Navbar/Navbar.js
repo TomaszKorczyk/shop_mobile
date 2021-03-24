@@ -14,7 +14,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems dark:bg-gray-800">
-        <div className="flex justify-items-start items-center mx-2 w-4/12 min-h-full">
+        <div className="flex justify-items-start items-center mx-2 w-1/6 min-h-full">
           <h1 className="text-2xl font-semibold dark:text-white">Sensoryka</h1>
           <img
             className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 rounded text-2xl m-2 transition duration-300"
@@ -37,10 +37,7 @@ class Navbar extends Component {
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
-              <li
-                className="min-h-full justify-center items-center flex"
-                key={index}
-              >
+              <li key={index}>
                 <a
                   className={`${item.cName} dark:text-white dark:hover:text-gray-800 dark:hover:transition dark:hover:duration-200`}
                   href={item.url}
@@ -50,9 +47,9 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <div className="grid items-center justify-center">
+          <li className="grid items-center justify-center min-h-full">
             <DarkMode />
-          </div>
+          </li>
         </ul>
       </nav>
     );
