@@ -13,3 +13,7 @@
 .nav-links:hover {
     @apply text-white;
 }
+
+.nav-links-mobile:hover {
+    @apply text-white;
+}

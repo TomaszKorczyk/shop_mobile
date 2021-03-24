@@ -22,18 +22,16 @@ class Navbar extends Component {
             alt="logo"
           />
         </div>
-        <div className="hidden" onClick={this.handleClick}>
+        <div className="invisible flex justify-items-center items-center" onClick={this.handleClick}>
           <i
-            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+            className={
+              this.state.clicked
+                ? "fas fa-times nav-links dark:text-white dark:hover:text-yellow-300"
+                : "fas fa-bars nav-links dark:text-white dark:hover:text-yellow-300"
+            }
           ></i>
         </div>
-        <ul
-          className={
-            this.state.clicked
-              ? "nav-menu active"
-              : "flex justify-around w-5/12 items-center"
-          }
-        >
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
