@@ -1,19 +1,19 @@
 .NavbarItems {
-    @apply bg-yellow-500 text-xl flex justify-between min-h-full min-w-full overflow-hidden transition duration-500 sticky top-0;
+    @apply bg-gray-200 text-xl flex justify-between overflow-hidden min-h-full min-w-full transition duration-500 sticky top-0;
 }
 
 .nav-menu {
-    @apply flex justify-around w-5/12 items-center;
+    @apply flex justify-between w-5/12 items-center;
 }
 
 .nav-links {
-    @apply text-gray-800 cursor-pointer;
+    @apply text-gray-800 cursor-pointer min-h-full p-2;
 }
 
 .nav-links:hover {
-    @apply text-white;
+    @apply bg-blue-300 rounded-lg text-white;
 }
 
 .nav-links-mobile:hover {
-    @apply text-white;
+    @apply nav-links;
 }

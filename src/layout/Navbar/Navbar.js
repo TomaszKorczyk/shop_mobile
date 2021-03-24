@@ -13,7 +13,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="NavbarItems dark:bg-black">
+      <nav className="NavbarItems dark:bg-gray-800">
         <div className="flex justify-self-start items-center mx-2 w-4/12">
           <h1 className="text-2xl font-semibold dark:text-white">Sensoryka</h1>
           <img
@@ -34,7 +34,7 @@ class Navbar extends Component {
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
-              <li key={index}>
+              <li className="min-h-full justify-center items-center flex" key={index}>
                 <a
                   className={`${item.cName} dark:text-white dark:hover:text-yellow-300`}
                   href={item.url}
