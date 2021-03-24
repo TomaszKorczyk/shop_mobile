@@ -5,7 +5,7 @@ export default function DarkMode() {
   return (
     <span
       onClick={() => setTheme(colorTheme)}
-      className="w-10 h-10 bg-green-600 dark:opacity-80 dark:hover:opacity-100 hover:text-white hover:bg-green-700 dark:text-white dark:hover:text-black dark:bg-yellow-300 hover:opacity-100 rounded-full cursor-pointer flex items-center justify-center"
+      className="w-10 h-10 bg-green-600 dark:opacity-80 dark:hover:opacity-100 hover:text-white hover:bg-green-700 dark:text-white dark:hover:text-black dark:bg-yellow-300 hover:opacity-100 rounded-full cursor-pointer flex items-center justify-center transition duration-300"
     >
       {colorTheme === "light" ? (
         <svg

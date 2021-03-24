@@ -3,7 +3,8 @@
 }
 
 .nav-menu {
-    @apply flex justify-between w-5/12 items-center;
+    /* @apply flex justify-between w-5/12 items-center; */
+    @apply grid grid-cols-6 gap-2.5 text-center items-center w-3/6 justify-end;
 }
 
 .nav-links {
@@ -11,7 +12,7 @@
 }
 
 .nav-links:hover {
-    @apply bg-blue-300 rounded-lg text-white;
+    @apply bg-blue-300 rounded-lg text-white transition duration-300;
 }
 
 .nav-links-mobile:hover {

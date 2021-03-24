@@ -14,15 +14,18 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems dark:bg-gray-800">
-        <div className="flex justify-self-start items-center mx-2 w-4/12">
+        <div className="flex justify-items-start items-center mx-2 w-4/12 min-h-full">
           <h1 className="text-2xl font-semibold dark:text-white">Sensoryka</h1>
           <img
-            className="bg-green-700 dark:bg-yellow-300 opacity-80 hover:opacity-100 rounded text-2xl m-1"
+            className="bg-green-700 dark:bg-yellow-300 opacity-80 hover:opacity-100 rounded text-2xl m-2 transition duration-300"
             src={puzzle}
             alt="logo"
           />
         </div>
-        <div className="invisible flex justify-items-center items-center" onClick={this.handleClick}>
+        <div
+          className="invisible flex justify-items-center items-center"
+          onClick={this.handleClick}
+        >
           <i
             className={
               this.state.clicked
@@ -34,9 +37,12 @@ class Navbar extends Component {
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
-              <li className="min-h-full justify-center items-center flex" key={index}>
+              <li
+                className="min-h-full justify-center items-center flex"
+                key={index}
+              >
                 <a
-                  className={`${item.cName} dark:text-white dark:hover:text-yellow-300`}
+                  className={`${item.cName} dark:text-white dark:hover:text-gray-800 dark:hover:transition dark:hover:duration-200`}
                   href={item.url}
                 >
                   {item.title}
@@ -44,7 +50,7 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <div className="m-2">
+          <div className="grid items-center justify-center">
             <DarkMode />
           </div>
         </ul>
