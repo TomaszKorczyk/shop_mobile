@@ -14,10 +14,11 @@
     @apply nav-links;
 } */
 
-.nav-links {
+
+/* .nav-links {
     @apply text-gray-800 cursor-pointer p-2;
 }
 
 .nav-links:hover {
     @apply bg-blue-300 rounded-lg text-white transition duration-300;
-}
+} */

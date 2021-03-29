@@ -3,7 +3,6 @@ import puzzle from "../../assets/icons/puzzle.svg";
 import { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import DarkMode from "../../components/DarkMode";
-import "./Navbar.css";
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -56,7 +55,7 @@ class Navbar extends Component {
                       return (
                         <li key={index}>
                           <a
-                            className={`${item.cName} dark:text-white dark:hover:text-gray-800 dark:hover:transition dark:hover:duration-200`}
+                            className="text-gray-800 cursor-pointer p-2 rounded-lg hover:bg-blue-300 dark:text-white dark:hover:text-gray-800 transition duration-200"
                             href={item.url}
                           >
                             {item.title}
