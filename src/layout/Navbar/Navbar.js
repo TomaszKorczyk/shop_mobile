@@ -13,24 +13,22 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="bg-white dark:bg-gray-800 relative transition duration-500 top-0">
+      <nav className="bg-white dark:bg-gray-800 transition duration-500 top-0">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between">
             {/* logo */}
 
             <div className="flex space-x-4">
-              <div>
-                <a href="#" className="flex items-center px-2">
-                  <img
-                    className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 dark:hover:bg-yellow-500 rounded text-2xl m-2 transition duration-300"
-                    src={puzzle}
-                    alt="logo"
-                  />
-                  <span className="text-2xl font-semibold dark:text-white">
-                    Sensoryka
-                  </span>
-                </a>
-              </div>
+              <a href="/home.js" className="flex items-center px-2">
+                <img
+                  className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 dark:hover:bg-yellow-500 rounded text-2xl m-2 transition duration-300"
+                  src={puzzle}
+                  alt="logo"
+                />
+                <span className="text-2xl font-semibold dark:text-white">
+                  Sensoryka
+                </span>
+              </a>
             </div>
 
             {/* button menu */}
@@ -82,35 +80,35 @@ class Navbar extends Component {
         {/* list menu */}
 
         <div
-          className={`absolute md:hidden inset-y-0 left-0 w-60 h-screen z-10 space-y-6 px-2 py-7 transform ${
-            this.state.clicked ? "tak" : "-translate-x-full"
-          } bg-blue-500 transition duration-300 ease-in-out`}
+          className={`absolute md:hidden h-full w-64 space-y-6 px-2 py-7 transform ${
+            this.state.clicked ? "" : "-translate-x-full"
+          } bg-blue-500 transition duration-300 ease-in-out inset-y-0 left-0`}
         >
           <div className="flex space-x-4">
-              <div>
-                <a href="#" className="flex items-center px-2">
-                  <img
-                    className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 dark:hover:bg-yellow-500 rounded text-2xl m-2 transition duration-300"
-                    src={puzzle}
-                    alt="logo"
-                  />
-                  <span className="text-2xl font-semibold dark:text-white">
-                    Sensoryka
-                  </span>
+            {/* logo mobile */}
+
+            <a href="#" className="flex items-center px-2">
+              <img
+                className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 dark:hover:bg-yellow-500 rounded text-2xl m-2 transition duration-300"
+                src={puzzle}
+                alt="logo"
+              />
+              <span className="text-2xl font-semibold">Sensoryka</span>
+            </a>
+          </div>
+          <nav>
+            {MenuItems.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  className="block py-2 px-4 text-sm hover:bg-blue-200 rounded text-center transition duration-200"
+                  href={item.url}
+                >
+                  {item.title}
                 </a>
-              </div>
-            </div>
-          {MenuItems.map((item, index) => {
-            return (
-              <a
-                key={index}
-                className="block py-2 px-4 text-sm   hover:bg-blue-200 rounded text-center transition duration-200"
-                href={item.url}
-              >
-                {item.title}
-              </a>
-            );
-          })}
+              );
+            })}
+          </nav>
         </div>
       </nav>
     );
