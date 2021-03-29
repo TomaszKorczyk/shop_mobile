@@ -1,9 +1,13 @@
-.NavbarItems {
+/* .NavbarItems {
     @apply bg-white text-xl flex justify-between overflow-hidden min-h-full min-w-full transition duration-500 sticky top-0;
 }
 
 .nav-menu {
     @apply grid grid-cols-6 gap-2.5 text-center items-center w-3/6 justify-between;
+}
+
+.nav-menu {
+    @apply flex text-center items-center w-3/6 justify-between;
 }
 
 .nav-links {
@@ -16,4 +20,4 @@
 
 .nav-links-mobile:hover {
     @apply nav-links;
-}
+} */
