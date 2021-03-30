@@ -12,7 +12,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="bg-white dark:bg-gray-800 transition duration-500 top-0">
+      <nav className="bg-white dark:bg-gray-800 md:sticky transition duration-500 top-0">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between">
             {/* logo */}
@@ -41,7 +41,7 @@ class Navbar extends Component {
                   className={`
                   ${
                     this.state.clicked ? "fas fa-times " : "fas fa-bars "
-                  }text-black dark:text-white cursor-pointer
+                  }text-black dark:text-white cursor-pointer text-3xl
                     `}
                 ></i>
               </div>
@@ -79,14 +79,14 @@ class Navbar extends Component {
         {/* list menu */}
 
         <div
-          className={`absolute md:hidden h-full w-64 space-y-6 px-2 py-7 transform ${
+          className={`absolute md:hidden h-full w-64 space-y-6 px-2 py-7 z-50 transform ${
             this.state.clicked ? "" : "-translate-x-full"
           } bg-blue-500 transition duration-300 ease-in-out inset-y-0 left-0`}
         >
           <div className="flex space-x-4">
             {/* logo mobile */}
 
-            <a href="#" className="flex items-center px-2">
+            <a href="/" className="flex items-center px-2">
               <img
                 className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 dark:hover:bg-yellow-500 rounded text-2xl m-2 transition duration-300"
                 src={puzzle}
@@ -95,7 +95,7 @@ class Navbar extends Component {
               <span className="text-2xl font-semibold">Sensoryka</span>
             </a>
           </div>
-          <nav>
+          <nav className="divide-y divide-blue-600">
             {MenuItems.map((item, index) => {
               return (
                 <a
