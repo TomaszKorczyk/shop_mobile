@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/shop_mobile/static/css/main.ba0e81d2.chunk.css",
-    "main.js": "/shop_mobile/static/js/main.436ca159.chunk.js",
-    "main.js.map": "/shop_mobile/static/js/main.436ca159.chunk.js.map",
+    "main.css": "/shop_mobile/static/css/main.773511c1.chunk.css",
+    "main.js": "/shop_mobile/static/js/main.6da239c6.chunk.js",
+    "main.js.map": "/shop_mobile/static/js/main.6da239c6.chunk.js.map",
     "runtime-main.js": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js",
     "runtime-main.js.map": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js.map",
-    "static/js/2.5802343a.chunk.js": "/shop_mobile/static/js/2.5802343a.chunk.js",
-    "static/js/2.5802343a.chunk.js.map": "/shop_mobile/static/js/2.5802343a.chunk.js.map",
+    "static/js/2.4c73d04f.chunk.js": "/shop_mobile/static/js/2.4c73d04f.chunk.js",
+    "static/js/2.4c73d04f.chunk.js.map": "/shop_mobile/static/js/2.4c73d04f.chunk.js.map",
     "index.html": "/shop_mobile/index.html",
-    "static/css/main.ba0e81d2.chunk.css.map": "/shop_mobile/static/css/main.ba0e81d2.chunk.css.map",
-    "static/js/2.5802343a.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.5802343a.chunk.js.LICENSE.txt",
+    "static/css/main.773511c1.chunk.css.map": "/shop_mobile/static/css/main.773511c1.chunk.css.map",
+    "static/js/2.4c73d04f.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.4c73d04f.chunk.js.LICENSE.txt",
     "static/media/puzzle.a8e67b30.svg": "/shop_mobile/static/media/puzzle.a8e67b30.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0dfc7ccc.js",
-    "static/js/2.5802343a.chunk.js",
-    "static/css/main.ba0e81d2.chunk.css",
-    "static/js/main.436ca159.chunk.js"
+    "static/js/2.4c73d04f.chunk.js",
+    "static/css/main.773511c1.chunk.css",
+    "static/js/main.6da239c6.chunk.js"
   ]
 }
