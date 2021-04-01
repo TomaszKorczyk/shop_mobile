@@ -13,7 +13,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="bg-white dark:bg-gray-800 md:sticky transition duration-500 top-0">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="mx-auto px-4">
           <div className="flex justify-between">
             {/* logo */}
 

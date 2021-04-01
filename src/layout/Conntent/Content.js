@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Content() {
   return (
-    <div className="flex flex-wrap min-h-screen z-10">
+    <div className="min-h-screen w-full">
       <div className="items-center text-center justify-center m-auto">
         <p className="justify-center items-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
