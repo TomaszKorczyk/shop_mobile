@@ -1,0 +1,17 @@
+.carousel {
+    @apply bg-green-500 pb-5 flex;
+}
+
+.carousel .control-dots {
+    margin: 0;
+}
+
+.carousel .slide img {
+    height: 200px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.slide {
+    @apply h-full flex;
+}

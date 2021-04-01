@@ -1,12 +1,12 @@
-import mata from "../../assets/image/mata.jpg";
+import shark from "../../assets/image/shark.jpg";
 import balls from "../../assets/image/piłki.jpg";
 import box from "../../assets/image/pudelko.jpg";
 import foot from "../../assets/image/stopy.jpg";
 export const Card = [
   {
     id: 1,
-    title: "mata",
-    img: mata,
+    title: "shark",
+    img: shark,
   },
   {
     id: 2,
