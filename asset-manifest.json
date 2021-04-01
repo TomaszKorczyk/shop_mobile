@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/shop_mobile/static/css/main.773511c1.chunk.css",
-    "main.js": "/shop_mobile/static/js/main.66fcd5e4.chunk.js",
-    "main.js.map": "/shop_mobile/static/js/main.66fcd5e4.chunk.js.map",
+    "main.css": "/shop_mobile/static/css/main.059425d7.chunk.css",
+    "main.js": "/shop_mobile/static/js/main.9837ed52.chunk.js",
+    "main.js.map": "/shop_mobile/static/js/main.9837ed52.chunk.js.map",
     "runtime-main.js": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js",
     "runtime-main.js.map": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js.map",
-    "static/js/2.4c73d04f.chunk.js": "/shop_mobile/static/js/2.4c73d04f.chunk.js",
-    "static/js/2.4c73d04f.chunk.js.map": "/shop_mobile/static/js/2.4c73d04f.chunk.js.map",
+    "static/css/2.bffc480b.chunk.css": "/shop_mobile/static/css/2.bffc480b.chunk.css",
+    "static/js/2.e6a36b1b.chunk.js": "/shop_mobile/static/js/2.e6a36b1b.chunk.js",
+    "static/js/2.e6a36b1b.chunk.js.map": "/shop_mobile/static/js/2.e6a36b1b.chunk.js.map",
     "index.html": "/shop_mobile/index.html",
-    "static/css/main.773511c1.chunk.css.map": "/shop_mobile/static/css/main.773511c1.chunk.css.map",
-    "static/js/2.4c73d04f.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.4c73d04f.chunk.js.LICENSE.txt",
-    "static/media/puzzle.a8e67b30.svg": "/shop_mobile/static/media/puzzle.a8e67b30.svg"
+    "static/css/2.bffc480b.chunk.css.map": "/shop_mobile/static/css/2.bffc480b.chunk.css.map",
+    "static/css/main.059425d7.chunk.css.map": "/shop_mobile/static/css/main.059425d7.chunk.css.map",
+    "static/js/2.e6a36b1b.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.e6a36b1b.chunk.js.LICENSE.txt",
+    "static/media/mata.6c5b4492.jpg": "/shop_mobile/static/media/mata.6c5b4492.jpg",
+    "static/media/piłki.bbc4fedf.jpg": "/shop_mobile/static/media/piłki.bbc4fedf.jpg",
+    "static/media/pudelko.9e68adf5.jpg": "/shop_mobile/static/media/pudelko.9e68adf5.jpg",
+    "static/media/puzzle.a8e67b30.svg": "/shop_mobile/static/media/puzzle.a8e67b30.svg",
+    "static/media/stopy.ccc2904f.jpg": "/shop_mobile/static/media/stopy.ccc2904f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0dfc7ccc.js",
-    "static/js/2.4c73d04f.chunk.js",
-    "static/css/main.773511c1.chunk.css",
-    "static/js/main.66fcd5e4.chunk.js"
+    "static/css/2.bffc480b.chunk.css",
+    "static/js/2.e6a36b1b.chunk.js",
+    "static/css/main.059425d7.chunk.css",
+    "static/js/main.9837ed52.chunk.js"
   ]
 }
