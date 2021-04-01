@@ -1,4 +1,4 @@
-import "./style/index.css";
+import "./style/index.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./layout/Navbar/Navbar";
 import Content from "./layout/Conntent/Content";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "./Card";
-import "react-responsive-carousel-v2/dist/carousel.css";
-import { Carousel } from "react-responsive-carousel-v2";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 export default function MyCarousel() {
   return (
