@@ -1,4 +1,4 @@
-import useDarkMode from "../hook/useDarkMode";
+import useDarkMode from "../utils/hook/useDarkMode";
 
 export default function DarkMode() {
   const [colorTheme, setTheme] = useDarkMode();

@@ -1,7 +1,7 @@
 import React from "react";
 import MyOwlCarousel from "../../components/owlCarousel/MyOwlCarousel";
 
-export default function Content() {
+export default function Home() {
   return (
     <div className="overflow-hidden">
       <MyOwlCarousel />

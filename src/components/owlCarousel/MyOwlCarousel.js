@@ -6,15 +6,15 @@ import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import "./Owl.css";
 
 const breakPoints = {
-  0:{
-    items:1
+  0: {
+    items: 1,
   },
-  600:{
-    items:3
+  600: {
+    items: 3,
   },
-  1200:{
-    items:5
-  }
+  1200: {
+    items: 5,
+  },
 };
 
 function MyOwlCarousel() {
@@ -23,16 +23,19 @@ function MyOwlCarousel() {
       className="owl-theme dark:bg-gray-800 anime"
       loop
       autoplay
-      dots
       center
-      margin={10}
-      responsiveClass="true"
+      dots
+      margin={50}
       responsive={breakPoints}
     >
       {Cards.map((card, index) => {
         return (
           <div className="item" key={index}>
-            <img className="img" src={card.img} alt={card.title} />
+            <img
+              className="img"
+              src={card.img}
+              alt={card.title}
+            />
           </div>
         );
       })}
