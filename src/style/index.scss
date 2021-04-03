@@ -10,5 +10,9 @@ body {
     @apply bg-gray-400;
 }
 
+.anime {
+    @apply transition duration-500;
+}
+
 @tailwind components;
 @tailwind utilities;

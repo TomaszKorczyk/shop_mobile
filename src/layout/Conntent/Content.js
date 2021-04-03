@@ -1,10 +1,10 @@
 import React from "react";
-import MyCarousel from "../../components/carousel/MyCarousel";
+import MyOwlCarousel from "../../components/owlCarousel/MyOwlCarousel";
 
 export default function Content() {
   return (
     <div className="overflow-hidden">
-      <MyCarousel />
+      <MyOwlCarousel />
       <div className="items-center text-center justify-center m-auto">
         <p className="justify-center items-center">
           Borem ipsum dolor sit amet consectetur adipisicing elit. Rem

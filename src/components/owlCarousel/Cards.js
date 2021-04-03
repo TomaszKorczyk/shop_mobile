@@ -2,7 +2,7 @@ import shark from "../../assets/image/shark.jpg";
 import balls from "../../assets/image/piłki.jpg";
 import box from "../../assets/image/pudelko.jpg";
 import foot from "../../assets/image/stopy.jpg";
-export const Card = [
+export const Cards = [
   {
     id: 1,
     title: "shark",
