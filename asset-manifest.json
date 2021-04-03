@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shop_mobile/static/css/main.57be0083.chunk.css",
-    "main.js": "/shop_mobile/static/js/main.946b3be5.chunk.js",
-    "main.js.map": "/shop_mobile/static/js/main.946b3be5.chunk.js.map",
+    "main.css": "/shop_mobile/static/css/main.413b6f53.chunk.css",
+    "main.js": "/shop_mobile/static/js/main.6ae42717.chunk.js",
+    "main.js.map": "/shop_mobile/static/js/main.6ae42717.chunk.js.map",
     "runtime-main.js": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js",
     "runtime-main.js.map": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js.map",
-    "static/css/2.bffc480b.chunk.css": "/shop_mobile/static/css/2.bffc480b.chunk.css",
-    "static/js/2.b19299ee.chunk.js": "/shop_mobile/static/js/2.b19299ee.chunk.js",
-    "static/js/2.b19299ee.chunk.js.map": "/shop_mobile/static/js/2.b19299ee.chunk.js.map",
+    "static/css/2.567b1a64.chunk.css": "/shop_mobile/static/css/2.567b1a64.chunk.css",
+    "static/js/2.eedde5dc.chunk.js": "/shop_mobile/static/js/2.eedde5dc.chunk.js",
+    "static/js/2.eedde5dc.chunk.js.map": "/shop_mobile/static/js/2.eedde5dc.chunk.js.map",
     "index.html": "/shop_mobile/index.html",
-    "static/css/2.bffc480b.chunk.css.map": "/shop_mobile/static/css/2.bffc480b.chunk.css.map",
-    "static/css/main.57be0083.chunk.css.map": "/shop_mobile/static/css/main.57be0083.chunk.css.map",
-    "static/js/2.b19299ee.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.b19299ee.chunk.js.LICENSE.txt",
+    "static/css/2.567b1a64.chunk.css.map": "/shop_mobile/static/css/2.567b1a64.chunk.css.map",
+    "static/css/main.413b6f53.chunk.css.map": "/shop_mobile/static/css/main.413b6f53.chunk.css.map",
+    "static/js/2.eedde5dc.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.eedde5dc.chunk.js.LICENSE.txt",
     "static/media/piłki.bbc4fedf.jpg": "/shop_mobile/static/media/piłki.bbc4fedf.jpg",
     "static/media/pudelko.9e68adf5.jpg": "/shop_mobile/static/media/pudelko.9e68adf5.jpg",
     "static/media/puzzle.a8e67b30.svg": "/shop_mobile/static/media/puzzle.a8e67b30.svg",
@@ -20,9 +20,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0dfc7ccc.js",
-    "static/css/2.bffc480b.chunk.css",
-    "static/js/2.b19299ee.chunk.js",
-    "static/css/main.57be0083.chunk.css",
-    "static/js/main.946b3be5.chunk.js"
+    "static/css/2.567b1a64.chunk.css",
+    "static/js/2.eedde5dc.chunk.js",
+    "static/css/main.413b6f53.chunk.css",
+    "static/js/main.6ae42717.chunk.js"
   ]
 }
