@@ -51,7 +51,7 @@ class Navbar extends Component {
 
               <div className="flex justify-around space-x-6">
                 <div className="">
-                  <ul className="hidden md:grid grid-cols-5 gap-2.5 h-full text-center items-center">
+                  <ul className="hidden md:grid grid-cols-2 gap-2.5 h-full text-center items-center">
                     {routes.map((route, index) => {
                       return (
                         <li key={index}>
@@ -87,14 +87,14 @@ class Navbar extends Component {
           <div className="flex space-x-4">
             {/* logo mobile */}
 
-            <a href="/" className="flex items-center px-2">
+            <Link to="/" className="flex items-center px-2">
               <img
                 className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 dark:hover:bg-yellow-500 rounded text-2xl m-2 transition duration-300"
                 src={puzzle}
                 alt="logo"
               />
               <span className="text-2xl font-semibold">Sensoryka</span>
-            </a>
+            </Link>
           </div>
           <nav className="divide-y divide-blue-600">
             {routes.map((route, index) => {

@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../../layout/Home/Home";
 import Contact from "../../layout/Contact/Contact";
 
-export default [
+const routes = [
   {
     title: "Home",
     path: "/",
@@ -17,3 +17,4 @@ export default [
     protected: null,
   },
 ];
+export default routes;
