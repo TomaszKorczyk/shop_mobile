@@ -4,6 +4,7 @@ import routes from "./utils/routes/routes";
 import Navbar from "./layout/Navbar/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./layout/404/404";
+import Footer from "./layout/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <NotFound />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

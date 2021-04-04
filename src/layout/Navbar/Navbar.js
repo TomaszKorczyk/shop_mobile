@@ -61,7 +61,7 @@ export default function Navbar() {
                     return (
                       <li key={index}>
                         <Link
-                          className="text-gray-800 cursor-pointer p-2 rounded-lg hover:bg-blue-300 dark:text-white dark:hover:text-gray-800 transition duration-200"
+                          className="text-gray-800 cursor-pointer p-2 rounded-lg hover:bg-blue-300 dark:text-white dark:hover:text-gray-800 dark:hover:bg-yellow-300 transition duration-200"
                           to={route.path}
                         >
                           {route.title}

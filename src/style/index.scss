@@ -6,9 +6,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+.dark {
+    @apply bg-white text-gray-800;
+}
+
+.light {
     @apply bg-gray-400;
-    // @apply bg-white;
 }
 
 .anime {
