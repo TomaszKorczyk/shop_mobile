@@ -44,7 +44,7 @@ export default function Footer() {
                   target="_blank"
                 >
                   <i
-                    className={`fab fa-${social.icons} py-1 pr-2 grid grid-cols-4 lg:grid-cols-2 lg:text-center text-center md:text-left`}
+                    className={`fab fa-${social.icons} py-1 pr-2 grid grid-cols-6 lg:grid-cols-2 lg:text-center text-left`}
                   >
                     <p className="grid col-auto lg:text-left">{social.title}</p>
                   </i>
