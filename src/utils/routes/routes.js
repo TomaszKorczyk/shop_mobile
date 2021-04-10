@@ -5,7 +5,7 @@ import Contact from "../../layout/Contact/Contact";
 const routes = [
   {
     title: "Home",
-    path: "/",
+    path: "/shop_mobile",
     exact: true,
     component: () => <Home />,
     protected: null,

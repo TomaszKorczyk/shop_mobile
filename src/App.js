@@ -1,10 +1,9 @@
+import React from "react";
 import "./style/index.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from "./utils/routes/routes";
-import Navbar from "./layout/Navbar/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-import NotFound from "./layout/404/404";
-import Footer from "./layout/Footer/Footer";
+import { Navbar, Footer, NotFound } from "./layout";
 
 function App() {
   return (
