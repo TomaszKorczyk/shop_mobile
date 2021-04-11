@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style/index.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from "./utils/routes/routes";
-import ScrollToTop from "./components/ScrollToTop";
+import { Loading, ScrollToTop } from "./components";
 import { Navbar, Footer, NotFound } from "./layout";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setIsLoading(true);
+  }, []);
+  // if (isLoading) return <Loading />;
   return (
     <Router>
       <Navbar />
