@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./style/index.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from "./utils/routes/routes";
-import { Loading, ScrollToTop } from "./components";
+import { ScrollToTop } from "./components";
 import { Navbar, Footer, NotFound } from "./layout";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setIsLoading(true);
-  }, []);
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => {
+  //   setIsLoading(true);
+  // }, []);
   // if (isLoading) return <Loading />;
   return (
     <Router>
