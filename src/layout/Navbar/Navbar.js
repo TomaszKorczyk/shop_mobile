@@ -56,7 +56,7 @@ export default function Navbar() {
 
             <div className="flex justify-around space-x-6">
               <div className="">
-                <ul className="hidden md:grid grid-cols-2 gap-2.5 h-full text-center items-center">
+                <ul className="hidden md:grid grid-cols-4 gap-2.5 h-full text-center items-center">
                   {routes.map((route, index) => {
                     return (
                       <li key={index}>

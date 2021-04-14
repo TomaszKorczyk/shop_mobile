@@ -5,7 +5,7 @@ import socials from "./social";
 export default function Footer() {
   return (
     <footer className="w-full bg-white dark:bg-gray-800 dark:text-white anime bottom-0 ">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 sm:gap-x-20 md:gap-x-0 grid-rows-2 md:grid-rows-none lg:flex lg:justify-around p-4 mt-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 sm:gap-x-20 md:gap-x-0 grid-rows-2 md:grid-rows-none lg:flex lg:justify-around p-4">
         <div className="place">
           <h1 className="pb-2">Services</h1>
           <div className="lg:pl-5">
@@ -45,9 +45,8 @@ export default function Footer() {
                 >
                   <i
                     className={`fab fa-${social.icons} py-1 pr-2 lg:text-center`}
-                  >
-                  </i>
-                    <p className="">{social.title}</p>
+                  ></i>
+                  <p className="">{social.title}</p>
                 </a>
               );
             })}

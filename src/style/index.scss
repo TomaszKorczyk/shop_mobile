@@ -18,5 +18,15 @@
     @apply transition duration-500;
 }
 
+body,
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+.init {
+    @apply h-screen flex justify-center items-center;
+}
+
 @tailwind components;
 @tailwind utilities;
