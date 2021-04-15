@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./index.css";
+import Icon from "./Icon";
 import { storage, db } from "../../../config/Config";
 
 export default function AddProducts() {
@@ -22,7 +24,6 @@ export default function AddProducts() {
 
   const addProduct = (e) => {
     e.preventDefault();
-    // console.log(productName, productPrice, productImg);
     const uploadTask = storage
       .ref(`product-images/${productImg.name}`)
       .put(productImg);
@@ -62,36 +63,58 @@ export default function AddProducts() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-indigo-500">
-      <div className="flex flex-wrap w-10/12">
-        <p className="">Hi Admin</p>
+    <div className="flex justify-center items-center h-full my-5 py-5">
+      <div className="flex flex-wrap w-10/12 bg-blue-300 rounded-md my-5">
+        <p className="w-full flex justify-center pt-1 border-b border-black border-opacity-50">
+          Hi Admin
+        </p>
         <form
           onSubmit={addProduct}
           autoComplete="off"
-          className="bg-yellow-200 flex flex-wrap w-full overflow-hidden "
+          className="flex flex-wrap w-full overflow-hidden "
         >
-          <label htmlFor="product-name" className="w-full">
+          <label htmlFor="product-name" className="w-full text-center py-2">
             Product Name
           </label>
           <input
             type="text"
             required
-            className="w-full"
+            className="w-full mx-3 rounded text-center py-1 outline-none"
             onChange={(e) => setProductName(e.target.value)}
             value={productName}
           />
-          <label htmlFor="product-price">Product Price</label>
+          <label htmlFor="product-price" className="w-full text-center py-2">
+            Product Price
+          </label>
           <input
             type="number"
             required
+            className="w-full mx-3 rounded text-center py-1 outline-none"
             onChange={(e) => setProductPrice(e.target.value)}
             value={productPrice}
           />
-          <label htmlFor="product-img">Product Image</label>
-          <input type="file" required onChange={productImgHandler} id="file" />
-          <button>ADD</button>
+          <p className="w-full text-center py-2">Product Image</p>
+          <label
+            htmlFor="file"
+            className="flex items-center text-white justify-center w-full border mx-3 mb-2 cursor-pointer"
+          >
+            <Icon />
+            <input
+              className="input"
+              type="file"
+              id="file"
+              onChange={productImgHandler}
+              required
+              accept="image/*"
+            />
+          </label>
+          <button className="uppercase bg-yellow-700 w-full mx-4 mb-4 p-1 rounded-lg outline-none">
+            add
+          </button>
         </form>
-        {error && <span>{error}</span>}
+        {error && (
+          <span className="w-full flex justify-center pb-2">{error}</span>
+        )}
       </div>
     </div>
   );

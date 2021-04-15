@@ -24,7 +24,7 @@ export default function Navbar() {
           {/* logo */}
 
           <div className="flex space-x-4">
-            <Link to="/" className="flex items-center px-2">
+            <Link to="/shop_mobile" className="flex items-center px-2">
               <img
                 className="bg-blue-300 dark:bg-yellow-300 opacity-80 hover:opacity-100 hover:bg-blue-600 dark:hover:bg-yellow-500 rounded text-2xl m-2 transition duration-300"
                 src={puzzle}
