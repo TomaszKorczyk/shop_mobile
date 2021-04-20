@@ -1,9 +1,10 @@
 import React from "react";
 import "./style/index.scss";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import routes from "./utils/routes/routes";
 import { ScrollToTop } from "./components";
 import { Navbar, Footer, NotFound } from "./layout";
+import { ProductsContextProvider } from "./store/ProductsContext";
 
 function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -12,7 +13,7 @@ function App() {
   // }, []);
   // if (isLoading) return <Loading />;
   return (
-    <Router>
+    <ProductsContextProvider>
       <Navbar />
       <ScrollToTop />
       <Switch>
@@ -29,7 +30,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-    </Router>
+    </ProductsContextProvider>
   );
 }
 
