@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/shop_mobile/static/css/main.deacbebb.chunk.css",
-    "main.js": "/shop_mobile/static/js/main.9d4024df.chunk.js",
-    "main.js.map": "/shop_mobile/static/js/main.9d4024df.chunk.js.map",
+    "main.css": "/shop_mobile/static/css/main.9ead3f4d.chunk.css",
+    "main.js": "/shop_mobile/static/js/main.cf692e68.chunk.js",
+    "main.js.map": "/shop_mobile/static/js/main.cf692e68.chunk.js.map",
     "runtime-main.js": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js",
     "runtime-main.js.map": "/shop_mobile/static/js/runtime-main.0dfc7ccc.js.map",
     "static/css/2.567b1a64.chunk.css": "/shop_mobile/static/css/2.567b1a64.chunk.css",
-    "static/js/2.6741cf71.chunk.js": "/shop_mobile/static/js/2.6741cf71.chunk.js",
-    "static/js/2.6741cf71.chunk.js.map": "/shop_mobile/static/js/2.6741cf71.chunk.js.map",
+    "static/js/2.5155bac2.chunk.js": "/shop_mobile/static/js/2.5155bac2.chunk.js",
+    "static/js/2.5155bac2.chunk.js.map": "/shop_mobile/static/js/2.5155bac2.chunk.js.map",
     "index.html": "/shop_mobile/index.html",
     "static/css/2.567b1a64.chunk.css.map": "/shop_mobile/static/css/2.567b1a64.chunk.css.map",
-    "static/css/main.deacbebb.chunk.css.map": "/shop_mobile/static/css/main.deacbebb.chunk.css.map",
-    "static/js/2.6741cf71.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.6741cf71.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/shop_mobile/static/media/mata.73543f8a.jpg",
+    "static/css/main.9ead3f4d.chunk.css.map": "/shop_mobile/static/css/main.9ead3f4d.chunk.css.map",
+    "static/js/2.5155bac2.chunk.js.LICENSE.txt": "/shop_mobile/static/js/2.5155bac2.chunk.js.LICENSE.txt",
+    "static/media/mata.73543f8a.jpg": "/shop_mobile/static/media/mata.73543f8a.jpg",
     "static/media/piłki.bbc4fedf.jpg": "/shop_mobile/static/media/piłki.bbc4fedf.jpg",
     "static/media/pudelko.9e68adf5.jpg": "/shop_mobile/static/media/pudelko.9e68adf5.jpg",
     "static/media/puzzle.a8e67b30.svg": "/shop_mobile/static/media/puzzle.a8e67b30.svg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.0dfc7ccc.js",
     "static/css/2.567b1a64.chunk.css",
-    "static/js/2.6741cf71.chunk.js",
-    "static/css/main.deacbebb.chunk.css",
-    "static/js/main.9d4024df.chunk.js"
+    "static/js/2.5155bac2.chunk.js",
+    "static/css/main.9ead3f4d.chunk.css",
+    "static/js/main.cf692e68.chunk.js"
   ]
 }
