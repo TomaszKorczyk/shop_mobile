@@ -18,6 +18,10 @@
     @apply transition duration-500;
 }
 
+#root {
+    @apply min-h-screen;
+}
+
 body,
 html {
     width: 100%;

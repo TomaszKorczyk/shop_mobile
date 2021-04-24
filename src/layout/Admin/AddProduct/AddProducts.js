@@ -63,7 +63,7 @@ export default function AddProducts() {
   };
 
   return (
-    <div className="flex justify-center items-center h-full my-5 py-5">
+    <div className="my-5 py-5 init">
       <div className="flex flex-wrap w-10/12 bg-blue-300 rounded-md my-5">
         <p className="w-full flex justify-center pt-1 border-b border-black border-opacity-50">
           Hi Admin
