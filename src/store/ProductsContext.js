@@ -19,6 +19,7 @@ export class ProductsContextProvider extends Component {
             ProductName: change.doc.data().ProductName,
             ProductPrice: change.doc.data().ProductPrice,
             ProductImg: change.doc.data().ProductImg,
+            ProductDescription: change.doc.data().ProductDescription,
           });
         }
         this.setState({

@@ -20,9 +20,8 @@ export const Pro = ({ product }) => {
         <h5 className="w-full pr-2 text-right tracking-wide text-gray-700 opacity-70 dark:text-white">
           {product.ProductPrice}.00 zł
         </h5>
-        <p className="text-justify text-sm dark:text-gray-200 tracking-wider">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-          expedita.
+        <p className="text-center text-sm dark:text-gray-200 tracking-wider">
+          {product.ProductDescription}
         </p>
       </section>
       <div className="flex justify-center py-1">

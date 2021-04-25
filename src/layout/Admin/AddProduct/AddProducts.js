@@ -5,8 +5,9 @@ import { storage, db } from "../../../config/Config";
 
 export default function AddProducts() {
   const [productName, setProductName] = useState("");
-  const [productPrice, setProductPrice] = useState(0);
+  const [productPrice, setProductPrice] = useState();
   const [productImg, setProductImg] = useState("");
+  const [productDescription, setProductDescription] = useState("");
   const [error, setError] = useState("");
 
   const types = ["image/png", "image/jpeg", "image/jpg"];
@@ -48,11 +49,13 @@ export default function AddProducts() {
                 ProductName: productName,
                 ProductPrice: Number(productPrice),
                 ProductImg: url,
+                ProductDescription: productDescription,
               })
               .then(() => {
                 setProductName("");
                 setProductPrice(0);
                 setProductImg("");
+                setProductDescription("");
                 setError("");
                 document.getElementById("file").value = "";
               })
@@ -98,9 +101,25 @@ export default function AddProducts() {
             <input
               type="number"
               required
+              min="0"
               className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3 dark:text-black"
               onChange={(e) => setProductPrice(e.target.value)}
               value={productPrice}
+            />
+          </div>
+          <div className="flex flex-wrap w-full lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
+            <label
+              htmlFor="product-description"
+              className="w-full text-center py-2 lg:text-left"
+            >
+              Product Description
+            </label>
+            <input
+              type="text"
+              required
+              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3 dark:text-black"
+              onChange={(e) => setProductDescription(e.target.value)}
+              value={productDescription}
             />
           </div>
           <div className="flex flex-wrap w-full  lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
@@ -109,7 +128,7 @@ export default function AddProducts() {
             </p>
             <label
               htmlFor="file"
-              className="items-center sm:justify-around border border-black dark:border-white p-2 mx-3 mb-2 cursor-pointer w-full sm:flex lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3"
+              className="items-center sm:justify-around lg:justify-center border border-black dark:border-white p-2 mx-3 mb-2 cursor-pointer w-full sm:flex lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3"
             >
               <div className="flex justify-center sm:mx-2">
                 <Icon />
@@ -124,12 +143,15 @@ export default function AddProducts() {
               />
             </label>
           </div>
-          <button className="uppercase bg-yellow-700 dark:bg-yellow-500 w-full m-4 p-1 rounded-lg outline-none">
+
+          <button className="uppercase bg-yellow-700 dark:bg-yellow-500 w-full m-4 p-1 rounded-lg focus:outline-none">
             add
           </button>
         </form>
         {error && (
-          <span className="w-full flex justify-center pb-2">{error}</span>
+          <span className="w-full flex justify-center items-center pb-2">
+            {error}
+          </span>
         )}
       </div>
     </div>
