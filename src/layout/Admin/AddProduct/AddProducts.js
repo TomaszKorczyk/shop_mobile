@@ -83,7 +83,7 @@ export default function AddProducts() {
             <input
               type="text"
               required
-              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3"
+              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3 dark:text-black"
               onChange={(e) => setProductName(e.target.value)}
               value={productName}
             />
@@ -98,7 +98,7 @@ export default function AddProducts() {
             <input
               type="number"
               required
-              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3"
+              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3 dark:text-black"
               onChange={(e) => setProductPrice(e.target.value)}
               value={productPrice}
             />
