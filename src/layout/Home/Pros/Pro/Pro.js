@@ -7,7 +7,7 @@ export const Pro = ({ product }) => {
       <div>
         <div className="relative flex justify-center imgs mt-1">
           <img
-            className="absolute h-full w-full flex top-0 m-auto text-center justify-center object-contain shadow-lg rounded-lg"
+            className="absolute h-full w-full flex top-0 mt-1 m-auto text-center justify-center object-contain shadow-lg rounded-lg dark:bg-gray-100"
             src={product.ProductImg}
             alt={product.ProductName}
           />

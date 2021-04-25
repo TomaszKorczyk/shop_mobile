@@ -63,17 +63,17 @@ export default function AddProducts() {
   };
 
   return (
-    <div className="flex justify-center items-center my-5 sm:h-4/5 md:h-5/6 lg:my-0 lg:h-2/3 dark:text-white anime">
-      <div className="flex flex-wrap w-10/12 h-full lg:h-4/6 bg-blue-300 rounded-md dark:bg-gray-800 overflow-hidden">
+    <div className="flex justify-center items-center my-5 lg:my-0 lg:h-2/3 dark:text-white anime">
+      <div className="flex flex-wrap w-10/12 h-full lg:h-4/6 bg-blue-300 rounded-md dark:bg-gray-800">
         <p className="w-full py-2 flex justify-center items-center border-b border-black dark:border-white border-opacity-50">
           Hi Admin
         </p>
         <form
           onSubmit={addProduct}
           autoComplete="off"
-          className="flex flex-wrap w-full overflow-hidden m-2"
+          className="flex flex-wrap w-full m-2 overflow-hidden"
         >
-          <div className="flex flex-wrap w-full  lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
+          <div className="flex flex-wrap w-full lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
             <label
               htmlFor="product-name"
               className="w-full text-center py-2 lg:text-left"
@@ -115,7 +115,7 @@ export default function AddProducts() {
                 <Icon />
               </div>
               <input
-                className="input flex w-full sm:w-min sm:block"
+                className="input flex w-full sm:w-min sm:block lg:py-3"
                 type="file"
                 id="file"
                 onChange={productImgHandler}
