@@ -4,7 +4,7 @@ import socials from "./social";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white dark:bg-gray-800 dark:text-white anime bottom-0 ">
+    <footer className="w-full bg-white dark:bg-gray-800 dark:text-white anime bottom-0">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 sm:gap-x-20 md:gap-x-0 grid-rows-2 md:grid-rows-none lg:flex lg:justify-around p-4">
         <div className="place">
           <h1 className="pb-2">Services</h1>

@@ -63,52 +63,68 @@ export default function AddProducts() {
   };
 
   return (
-    <div className="my-5 py-5 init">
-      <div className="flex flex-wrap w-10/12 bg-blue-300 rounded-md my-5">
-        <p className="w-full flex justify-center pt-1 border-b border-black border-opacity-50">
+    <div className="flex justify-center items-center my-5 sm:h-4/5 md:h-5/6 lg:my-0 lg:h-2/3 dark:text-white anime">
+      <div className="flex flex-wrap w-10/12 h-full lg:h-4/6 bg-blue-300 rounded-md dark:bg-gray-800 overflow-hidden">
+        <p className="w-full py-2 flex justify-center items-center border-b border-black dark:border-white border-opacity-50">
           Hi Admin
         </p>
         <form
           onSubmit={addProduct}
           autoComplete="off"
-          className="flex flex-wrap w-full overflow-hidden "
+          className="flex flex-wrap w-full overflow-hidden m-2"
         >
-          <label htmlFor="product-name" className="w-full text-center py-2">
-            Product Name
-          </label>
-          <input
-            type="text"
-            required
-            className="w-full mx-3 rounded text-center py-1 outline-none"
-            onChange={(e) => setProductName(e.target.value)}
-            value={productName}
-          />
-          <label htmlFor="product-price" className="w-full text-center py-2">
-            Product Price
-          </label>
-          <input
-            type="number"
-            required
-            className="w-full mx-3 rounded text-center py-1 outline-none"
-            onChange={(e) => setProductPrice(e.target.value)}
-            value={productPrice}
-          />
-          <p className="w-full text-center py-2">Product Image</p>
-          <label
-            htmlFor="file"
-            className="flex items-center text-white justify-center w-full border mx-3 mb-2 cursor-pointer"
-          >
-            <Icon />
+          <div className="flex flex-wrap w-full  lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
+            <label
+              htmlFor="product-name"
+              className="w-full text-center py-2 lg:text-left"
+            >
+              Product Name
+            </label>
             <input
-              className="input"
-              type="file"
-              id="file"
-              onChange={productImgHandler}
+              type="text"
               required
-              accept="image/*"
+              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3"
+              onChange={(e) => setProductName(e.target.value)}
+              value={productName}
             />
-          </label>
-          <button className="uppercase bg-yellow-700 w-full mx-4 mb-4 p-1 rounded-lg outline-none">
+          </div>
+          <div className="flex flex-wrap w-full  lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
+            <label
+              htmlFor="product-price"
+              className="w-full text-center py-2 lg:text-left"
+            >
+              Product Price
+            </label>
+            <input
+              type="number"
+              required
+              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3"
+              onChange={(e) => setProductPrice(e.target.value)}
+              value={productPrice}
+            />
+          </div>
+          <div className="flex flex-wrap w-full  lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
+            <p className="w-full text-center py-2 lg:text-left">
+              Product Image
+            </p>
+            <label
+              htmlFor="file"
+              className="items-center sm:justify-around border border-black dark:border-white p-2 mx-3 mb-2 cursor-pointer w-full sm:flex lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3"
+            >
+              <div className="flex justify-center sm:mx-2">
+                <Icon />
+              </div>
+              <input
+                className="input flex w-full sm:w-min sm:block"
+                type="file"
+                id="file"
+                onChange={productImgHandler}
+                required
+                accept="image/*"
+              />
+            </label>
+          </div>
+          <button className="uppercase bg-yellow-700 dark:bg-yellow-500 w-full m-4 p-1 rounded-lg outline-none">
             add
           </button>
         </form>

@@ -1,10 +1,9 @@
 input[type="file"] {
-    @apply my-2 cursor-pointer rounded-lg p-1 outline-none
+    @apply cursor-pointer p-1 outline-none
 }
 
 .input::before {
-    content: "Wybierz se jakąś fotkę: ";
-    @apply text-white
+    content: "Wybierz se jakąś fotkę : ";
 }
 
 .input::-webkit-file-upload-button {
