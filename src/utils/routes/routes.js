@@ -1,8 +1,5 @@
 import React from "react";
-import Home from "../../layout/Home/Home";
-import Contact from "../../layout/Contact/Contact";
-import Admin from "../../layout/Admin/Admin";
-import AddProducts from "../../layout/Admin/AddProduct/AddProducts";
+import { Home, Login, SignUp, Contact, Admin, AddProducts } from "../../layout";
 
 const routes = [
   {
@@ -10,13 +7,25 @@ const routes = [
     path: "/shop_mobile",
     exact: true,
     component: () => <Home />,
-    protected: null,
+    protected: "guest user",
+  },
+  {
+    title: "Login",
+    path: "/login",
+    component: () => <Login />,
+    protected: "guest",
+  },
+  {
+    title: "Signup",
+    path: "/signup",
+    component: () => <SignUp />,
+    protected: "guest",
   },
   {
     title: "Kontakt",
     path: "/contact",
     component: () => <Contact />,
-    protected: null,
+    protected: "guest user",
   },
   {
     title: "Admin",

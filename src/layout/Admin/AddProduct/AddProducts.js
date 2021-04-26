@@ -53,7 +53,7 @@ export default function AddProducts() {
               })
               .then(() => {
                 setProductName("");
-                setProductPrice(0);
+                setProductPrice("");
                 setProductImg("");
                 setProductDescription("");
                 setError("");
