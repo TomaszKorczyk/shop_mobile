@@ -35,46 +35,64 @@ export default function SignUp(props) {
   }
 
   return (
-    <div className="container justify-center items-center my-10  anime">
-      <div className="bg-blue-300 dark:bg-gray-800 justify-center rounded-md mx-5 py-2">
-        <h1 className="text-center text-2xl">SignUp</h1>
-
+    <div className="container justify-center items-center my-10 sm:my-1 sm:m-auto lg:h-2/3 lg:my-5 anime">
+      <div className="bg-blue-300 dark:bg-gray-800 justify-center rounded-md mx-5 py-2 lg:w-2/3 lg:m-auto">
+        <h1 className="text-center text-2xl pb-2 my-2">SignUp</h1>
         <form
           autoComplete="off"
-          className="container justify-center items-center px-2"
+          className="container justify-center items-center w-full px-2 lg:w-1/2 lg:m-auto"
           onSubmit={handleSubmit}
         >
           {content.inputs.map((input, key) => {
             return (
-              <div key={key} className="w-full px-2">
-                <div className="formik">
-                  <input
-                    className={`input ${errors[input.name] && "inputErr"}`}
-                    type={input.type}
-                    name={input.name}
-                    placeholder=" "
-                    onChange={handleChange}
-                    value={values[input.name]}
-                  />
-                  <label
-                    htmlFor={input.label}
-                    className="label dark:bg-gray-800"
-                  >
-                    {input.label}
-                  </label>
+              <div key={key} className="w-full flex px-2 group">
+                <div className="flex items-center pb-8 p-3 justify-center">
+                  <i
+                    className={`${input.icon} text-xl ${
+                      !errors[input.name] ?
+                    " group-hover:text-white dark:group-hover:text-yellow-300 anime":"text-red-500 opacity-80"
+                    }`}
+                  ></i>
                 </div>
-                {errors[input.name] ? (
-                  <p className="err py-0">{errors[input.name]}</p>
-                ) : (
-                  <p className="noError"></p>
-                )}
+                <div className="w-full">
+                  <div className="formik">
+                    <input
+                      className={`input ${
+                        errors[input.name]
+                          ? "border-red-500"
+                          : "group-hover:border-white dark:group-hover:border-yellow-300 dark:border-white border-black anime"
+                      }`}
+                      type={input.type}
+                      name={input.name}
+                      placeholder=" "
+                      onChange={handleChange}
+                      value={values[input.name]}
+                    />
+                    <label
+                      htmlFor={input.label}
+                      className={`label bg-blue-300 dark:bg-gray-800 ${
+                        !errors[input.name] ?
+                        "group-hover:text-white anime dark:group-hover:text-yellow-300":"text-red-500"
+                      }`}
+                    >
+                      {input.label}
+                    </label>
+                  </div>
+                  <p
+                    className={`err ${
+                      !errors[input.name] ? "invisible" : "visible"
+                    }`}
+                  >
+                    {!errors[input.name] ? "'" : errors[input.name]}
+                  </p>
+                </div>
               </div>
             );
           })}
           {error && <div className="">{error}</div>}
           <button
             type="submit"
-            className="flex justify-center border border-black hover:border-white hover:text-white tracking-wider rounded-md  m-auto my-1 py-1 bg-blue-400 opacity-70 hover:opacity-100 focus:outline-none anime"
+            className="submit hover:text-white hover:border-white hover:opacity-100 test dark:test dark:hover:text-gray-500 focus:outline-none anime"
           >
             Register
           </button>
