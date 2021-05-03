@@ -134,12 +134,11 @@ export default function AddProducts() {
                 <Icon />
               </div>
               <input
-                className="input flex w-full sm:w-min sm:block lg:py-3"
+                className="file flex w-full sm:w-min sm:block lg:py-3"
                 type="file"
                 id="file"
                 onChange={productImgHandler}
                 required
-                accept="image/*"
               />
             </label>
           </div>

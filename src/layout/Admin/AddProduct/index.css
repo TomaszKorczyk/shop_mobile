@@ -2,11 +2,11 @@ input[type="file"] {
     @apply cursor-pointer p-1 outline-none
 }
 
-.input::before {
+.file::before {
     content: "Wybierz se jakąś fotkę : ";
 }
 
-.input::-webkit-file-upload-button {
+.file::-webkit-file-upload-button {
     @apply hidden
 }
 

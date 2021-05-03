@@ -36,7 +36,7 @@ export default function SignUp(props) {
 
   return (
     <div className="container justify-center items-center my-10 sm:my-1 sm:m-auto lg:h-2/3 lg:my-5 anime">
-      <div className="bg-blue-300 dark:bg-gray-800 justify-center rounded-md mx-5 py-2 lg:w-2/3 lg:m-auto">
+      <div className="bg-blue-300 dark:bg-gray-800 justify-center items-center grid grid-cols-1 rounded-md mx-5 py-2 lg:w-2/3 lg:h-full lg:m-auto">
         <h1 className="text-center text-2xl pb-2 my-2">SignUp</h1>
         <form
           autoComplete="off"

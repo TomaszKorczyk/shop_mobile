@@ -1,12 +1,6 @@
 const content = {
   inputs: [
     {
-      label: "Username",
-      name: "username",
-      type: "text",
-      icon: "fas fa-user",
-    },
-    {
       label: "Email",
       name: "email",
       type: "email",
@@ -17,12 +11,6 @@ const content = {
       name: "password",
       type: "password",
       icon: "fas fa-unlock-alt",
-    },
-    {
-      label: "Confirm password",
-      name: "password2",
-      type: "password",
-      icon: "fas fa-lock",
     },
   ],
 };
