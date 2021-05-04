@@ -58,7 +58,7 @@ export default function Login() {
                       className={`input ${
                         errors[input.name]
                           ? "border-red-500"
-                          : "group-hover:border-white dark:group-hover:border-yellow-300 dark:border-white border-black anime"
+                          : "group-hover:border-white dark:group-hover:border-yellow-300 dark:border-white text-white border-black anime"
                       }`}
                       type={input.type}
                       name={input.name}

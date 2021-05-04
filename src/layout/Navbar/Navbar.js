@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* button menu */}
 
-          <div className="flex space-x-6">
+          <div className="flex sm:space-x-6">
             <div
               className="flex md:hidden items-center"
               onClick={() => handleClick()}
@@ -56,7 +56,7 @@ export default function Navbar() {
 
             {/* menu */}
 
-            <div className="flex justify-around space-x-6">
+            <div className="flex justify-around sm:space-x-6">
               <div className="hidden md:grid gap-2.5 h-full text-center items-center">
                 <Link
                   className="text-gray-800 grid cursor-pointer p-2 rounded-lg hover:bg-blue-300 dark:text-white dark:hover:text-gray-800 dark:hover:bg-yellow-300 transition duration-200"

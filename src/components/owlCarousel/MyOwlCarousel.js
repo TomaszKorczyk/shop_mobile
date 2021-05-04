@@ -20,7 +20,7 @@ const breakPoints = {
 function MyOwlCarousel() {
   return (
     <OwlCarousel
-      className="owl-theme dark:bg-gray-800 anime"
+      className="owl-theme dark:bg-gray-800 anime border-t dark:border-white"
       loop
       autoplay
       center
@@ -32,7 +32,7 @@ function MyOwlCarousel() {
         return (
           <div className="item" key={index}>
             <img
-              className="img"
+              className="max-h-28 md:max-h-40 lg:max-h-52 w-1/2 grid justify-center m-auto"
               src={card.img}
               alt={card.title}
             />
