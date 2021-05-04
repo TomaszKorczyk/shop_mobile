@@ -1,9 +1,16 @@
 .formik {
-    @apply relative h-12 mt-2
+    @apply relative mt-2
 }
 
 .input {
-    @apply absolute p-5 top-0 left-0 w-full h-full border rounded-md bg-transparent outline-none transition-all
+    @apply absolute p-5 top-0 left-0 w-full h-full border rounded-md bg-transparent outline-none transition-all shadow-none;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 0px white inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .label {
@@ -15,8 +22,8 @@
 .input:not(:placeholder-shown)+.label,
 .input:-webkit-autofill+.label {
     top: -0.5rem;
-    font-size: 0.8rem;
     left: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .submit {

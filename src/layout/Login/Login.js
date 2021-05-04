@@ -38,7 +38,7 @@ export default function Login() {
         <form
           className="container justify-center items-center w-full px-2 lg:w-1/2 lg:m-auto"
           onSubmit={handleSubmit}
-          autoComplete="off"
+          // autoComplete="off"
         >
           {content.inputs.map((input, key) => {
             return (

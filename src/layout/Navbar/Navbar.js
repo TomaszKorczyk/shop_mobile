@@ -1,23 +1,15 @@
 import React, { useContext, useState } from "react";
-import { Link, NavLink, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import puzzle from "../../assets/icons/puzzle.svg";
 import routes from "../../utils/routes/routes";
 import { DarkMode, UserLog } from "../../components";
 import useScrollToTop from "../../utils/hook/useScrollToTop";
 import AppContext from "../../store/AppContext";
-import { auth } from "../../config/Config";
 
 export default function Navbar() {
   const [isLoggedIn, user] = useContext(AppContext);
   const [state, setState] = useState(false);
   const [visible] = useScrollToTop();
-  const history = useHistory();
-
-  function logout() {
-    auth.signOut().then(() => {
-      history.push("/login");
-    });
-  }
 
   function handleClick() {
     setState(!state);
@@ -64,7 +56,7 @@ export default function Navbar() {
 
             {/* menu */}
 
-            <div className="flex justify-around">
+            <div className="flex justify-around space-x-6">
               <div className="hidden md:grid gap-2.5 h-full text-center items-center">
                 <Link
                   className="text-gray-800 grid cursor-pointer p-2 rounded-lg hover:bg-blue-300 dark:text-white dark:hover:text-gray-800 dark:hover:bg-yellow-300 transition duration-200"
