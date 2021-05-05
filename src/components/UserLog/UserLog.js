@@ -13,13 +13,15 @@ export default function UserLog() {
   const closeMenu = () => setState(false);
 
   function logout() {
-    auth.signOut().then(() => {
-      history.replace("/login");
+    closeMenu();
+    auth.signOut().then((res) => {
+      history.push("/login");
     });
   }
 
+  console.log(state);
   return (
-    <span onClick={handleClick}>
+    <span>
       {isLoggedIn ? (
         <div onClick={handleClick} className="relative">
           <div
@@ -29,10 +31,7 @@ export default function UserLog() {
                 : ""
             } bg-blue-300 dark:bg-yellow-300 dark:text-white rounded-md cursor-pointer`}
           >
-            <i className="fas fa-user absolute top-0 p-1 text-center flex justify-center "></i>
-            <p className="absolute bottom-0 text-sm flex w-max justify-center px-1">
-              {user.user}
-            </p>
+            <i className="far fa-user-circle w-full h-full p-1 text-2xl flex justify-center items-center"></i>
           </div>
           <button
             onClick={closeMenu}
@@ -44,12 +43,20 @@ export default function UserLog() {
             }`}
           ></button>
           <div
-            className={`${!state ? "cliked" : "block"} ${
-              !isLoggedIn ? "cliked" : ""
+            className={`${
+              !state ? "cliked" : "block"
             } dropdown-menu dark:bg-gray-800 border p-1 z-10`}
           >
             <ul>
-              <li className="bg-blue-300 cursor-pointer hover:bg-blue-500 hover:text-white dark:bg-yellow-300 dark:hover:text-black rounded-md transition duration-300">
+              <li className="w-full flex m-auto">
+                <p className="text-sm m-auto w-max grid px-1 border-b mb-2">
+                  {user.user}
+                </p>
+              </li>
+              <li
+                onClick={handleClick}
+                className="bg-blue-300 cursor-pointer hover:bg-blue-500 hover:text-white dark:bg-yellow-300 dark:hover:text-black rounded-md transition duration-300"
+              >
                 {isLoggedIn && (
                   <div className="p-2" onClick={logout}>
                     Wyloguj

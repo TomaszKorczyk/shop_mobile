@@ -13,7 +13,7 @@ const routes = [
     title: "Login",
     path: "/login",
     component: () => <Login />,
-    protected: "guest",
+    protected: null,
   },
   {
     title: "Signup",
