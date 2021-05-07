@@ -3,9 +3,11 @@ import { Redirect, Route } from "react-router";
 import AppContext from "../../store/AppContext";
 
 export default function GuestRoute(props) {
-  const [isLoggedIn] = useContext(AppContext);
+  const [isLoggedIn, user] = useContext(AppContext);
 
-  if (!isLoggedIn) return <Route {...props} />;
-
-  return <Redirect to="/shop_mobile" />;
+  if (!isLoggedIn || user.role !== "admin" || user.role !== "user") {
+    return <Route {...props} />;
+  } else {
+    return <Redirect to="/contact" />;
+  }
 }

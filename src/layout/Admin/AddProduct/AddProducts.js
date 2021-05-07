@@ -8,6 +8,7 @@ export default function AddProducts() {
   const [productPrice, setProductPrice] = useState();
   const [productImg, setProductImg] = useState("");
   const [productDescription, setProductDescription] = useState("");
+  const [productCategory, setProductCategory] = useState("");
   const [error, setError] = useState("");
 
   const types = ["image/png", "image/jpeg", "image/jpg"];
@@ -50,12 +51,15 @@ export default function AddProducts() {
                 ProductPrice: Number(productPrice),
                 ProductImg: url,
                 ProductDescription: productDescription,
+                ProductCategory: productCategory,
+
               })
               .then(() => {
                 setProductName("");
                 setProductPrice("");
                 setProductImg("");
                 setProductDescription("");
+                setProductCategory("");
                 setError("");
                 document.getElementById("file").value = "";
               })
@@ -121,6 +125,27 @@ export default function AddProducts() {
               onChange={(e) => setProductDescription(e.target.value)}
               value={productDescription}
             />
+          </div>
+          <div className="flex flex-wrap w-full lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
+            <label
+              htmlFor="product-category"
+              className="w-full text-center py-2 lg:text-left"
+            >
+              Product Category
+            </label>
+            <select className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3 dark:text-black" name="category" >
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            {/* <input
+              type="text"
+              required
+              className="w-full mx-3 rounded text-center py-1 outline-none lg:mx-0 lg:py-0 lg:my-1 lg:col-span-3 dark:text-black"
+              onChange={(e) => setProductCategory(e.target.value)}
+              value={productCategory}
+            /> */}
           </div>
           <div className="flex flex-wrap w-full  lg:m-2 lg:grid lg:grid-rows-1 lg:grid-cols-4">
             <p className="w-full text-center py-2 lg:text-left">

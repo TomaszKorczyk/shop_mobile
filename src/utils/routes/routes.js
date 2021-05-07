@@ -7,13 +7,13 @@ const routes = [
     path: "/shop_mobile",
     exact: true,
     component: () => <Home />,
-    protected: null,
+    protected: "user",
   },
   {
     title: "Login",
     path: "/login",
     component: () => <Login />,
-    protected: null,
+    protected: "guest",
   },
   {
     title: "Signup",
@@ -25,7 +25,7 @@ const routes = [
     title: "Kontakt",
     path: "/contact",
     component: () => <Contact />,
-    protected: "auth",
+    protected: "user",
   },
   {
     title: "Admin",

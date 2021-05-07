@@ -46,7 +46,7 @@ function App() {
         <ScrollToTop />
         <Switch key={location.pathname} location={location}>
           {routes.map((route, index) => {
-            if (route.protected === "admin") {
+            if (route.protected === "admin" || user.role === "admin") {
               return (
                 <AdminRoute
                   key={index}
@@ -57,9 +57,9 @@ function App() {
               );
             }
 
-            if (route.protected === "guest") {
+            if (route.protected === "user" || user.role === "user") {
               return (
-                <GuestRoute
+                <AuthRoute
                   key={index}
                   path={route.path}
                   exact={route.exact}
@@ -68,9 +68,9 @@ function App() {
               );
             }
 
-            if (route.protected === "auth") {
+            if (route.protected === "guest" || !isLoggedIn) {
               return (
-                <AuthRoute
+                <GuestRoute
                   key={index}
                   path={route.path}
                   exact={route.exact}

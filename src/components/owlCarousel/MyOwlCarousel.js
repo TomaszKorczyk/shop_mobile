@@ -7,7 +7,7 @@ import "./Owl.css";
 
 const breakPoints = {
   0: {
-    items: 1,
+    items: 3,
   },
   600: {
     items: 3,
@@ -25,14 +25,14 @@ function MyOwlCarousel() {
       autoplay
       center
       dots
-      margin={50}
+      margin={40}
       responsive={breakPoints}
     >
       {Cards.map((card, index) => {
         return (
           <div className="item" key={index}>
             <img
-              className="max-h-28 md:max-h-40 lg:max-h-52 w-1/2 grid justify-center m-auto"
+              className="img w-1/2 grid justify-center m-auto"
               src={card.img}
               alt={card.title}
             />

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { auth } from "../../config/Config";
 import AppContext from "../../store/AppContext";
 import "./userlog.css";
@@ -14,14 +14,13 @@ export default function UserLog() {
 
   function logout() {
     closeMenu();
-    auth.signOut().then((res) => {
-      history.push("/login");
+    auth.signOut().then(() => {
+      history.push("/shop_mobile");
     });
   }
 
-  console.log(state);
   return (
-    <span>
+    <>
       {isLoggedIn ? (
         <div onClick={handleClick} className="relative">
           <div
@@ -38,7 +37,7 @@ export default function UserLog() {
             tabIndex="-1"
             className={`${
               state
-                ? "fixed inset-0 w-full h-full opacity-0 cursor-default bg-black"
+                ? "fixed inset-0 w-full h-full opacity-30 cursor-default bg-black"
                 : "hidden"
             }`}
           ></button>
@@ -49,7 +48,7 @@ export default function UserLog() {
           >
             <ul>
               <li className="w-full flex m-auto">
-                <p className="text-sm m-auto w-max grid px-1 border-b mb-2">
+                <p className="text-sm select-none cursor-default m-auto w-max grid px-1 border-b mb-2">
                   {user.user}
                 </p>
               </li>
@@ -67,10 +66,8 @@ export default function UserLog() {
           </div>
         </div>
       ) : (
-        <Link to="/login">
-          <i className="fas fa-user w-10 h-10 bg-blue-300 dark:opacity-80 dark:hover:opacity-100 hover:text-white hover:bg-blue-500 dark:text-white dark:hover:text-black dark:bg-yellow-300 hover:opacity-100 rounded-full cursor-pointer flex items-center justify-center transition duration-300"></i>
-        </Link>
+        <div className="hidden"></div>
       )}
-    </span>
+    </>
   );
 }

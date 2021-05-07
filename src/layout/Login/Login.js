@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import useForm from "../../utils/hook/useForm";
 import validate from "./ValidationForm";
 import { auth } from "../../config/Config";
 import content from "./content";
 import "./login.css";
+import AppContext from "../../store/AppContext";
 
 export default function Login() {
   const history = useHistory();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const [user] = useContext(AppContext);
   const { handleChange, handleSubmit, values, errors } = useForm(
     login,
     validate
@@ -21,9 +23,11 @@ export default function Login() {
     auth
       .signInWithEmailAndPassword(values.email, values.password)
       .then((res) => {
-        history.push("/shop_mobile");
         setError(false);
         setIsLoading(false);
+        if (isLoading || user.role !== "user" || user.role === "admin") {
+          history.push("/admin");
+        } else history.push("/shop_mobile");
       })
       .catch((e) => {
         setError(e.message);
