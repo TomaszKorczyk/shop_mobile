@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <nav className="relative bg-white dark:bg-gray-800 md:sticky anime top-0 z-50">
-      <div className="mx-auto px-4">
+      <div className="m-auto px-4">
         <div className="flex justify-between">
           {/* leftSide */}
 
