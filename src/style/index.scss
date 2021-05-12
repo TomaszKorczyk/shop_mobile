@@ -28,9 +28,5 @@ html {
     height: 100vh;
 }
 
-.init {
-    @apply flex justify-center items-center;
-}
-
 @tailwind components;
 @tailwind utilities;

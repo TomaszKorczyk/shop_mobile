@@ -90,7 +90,6 @@ export default function Navbar() {
           }`}
         ></button>
       </div>
-      {console.log(state)}
       <div>
         <div
           className={`fixed md:hidden h-full w-64 space-y-6 px-2 py-7 z-50 transform ${

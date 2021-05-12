@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.css";
+import "./product.css";
 
-export const Pro = ({ product }) => {
+export const Product = ({ product }) => {
   return (
     <div className="mb-2 border border-gray-500 bg-white dark:bg-gray-800  overflow-hidden anime">
       <div>
@@ -33,4 +33,4 @@ export const Pro = ({ product }) => {
   );
 };
 
-export default Pro;
+export default Product;

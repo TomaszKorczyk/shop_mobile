@@ -1,10 +1,9 @@
 {
     "name": "shop_mobile",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "private": true,
     "homepage": "https://tomaszkorczyk.github.io/shop_mobile/",
     "dependencies": {
-        "@chec/commerce.js": "^2.4.1",
         "@craco/craco": "^6.1.1",
         "@testing-library/jest-dom": "^5.11.9",
         "@testing-library/react": "^11.2.5",
