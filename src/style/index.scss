@@ -19,7 +19,7 @@
 }
 
 #root {
-    @apply h-screen;
+    @apply h-full
 }
 
 body,
@@ -30,6 +30,13 @@ html {
 
 .init {
     height: 66.3%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 1fr auto;
+    height: 100%;
 }
 
 @tailwind components;

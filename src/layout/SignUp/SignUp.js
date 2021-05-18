@@ -35,12 +35,12 @@ export default function SignUp(props) {
   }
 
   return (
-    <div className="container justify-center items-center my-10 sm:my-1 sm:m-auto lg:h-2/3 lg:my-5 anime">
-      <div className="bg-blue-300 dark:bg-gray-800 justify-center items-center grid grid-cols-1 rounded-md mx-5 py-2 lg:w-2/3 lg:h-full lg:m-auto">
+    <div className="flex justify-center items-center h-full py-4 md:py-5 anime">
+      <div className="bg-blue-300 dark:bg-gray-800 h-full justify-center items-center grid grid-cols-1 rounded-md w-5/6 p-2 sm:w-3/4 md:w-1/2">
         <h1 className="text-center text-2xl pb-2 my-2">SignUp</h1>
         <form
           autoComplete="off"
-          className="container justify-center items-center w-full px-2 lg:w-1/2 lg:m-auto"
+          className="block justify-center items-center w-full px-2 md:w-5/6 md:m-auto"
           onSubmit={handleSubmit}
         >
           {content.inputs.map((input, key) => {
@@ -49,8 +49,9 @@ export default function SignUp(props) {
                 <div className="flex items-center pb-8 p-3 justify-center">
                   <i
                     className={`${input.icon} text-xl ${
-                      !errors[input.name] ?
-                    " group-hover:text-white dark:group-hover:text-yellow-300 anime":"text-red-500 opacity-80"
+                      !errors[input.name]
+                        ? " group-hover:text-white dark:group-hover:text-yellow-300 anime"
+                        : "text-red-500 opacity-80"
                     }`}
                   ></i>
                 </div>
@@ -71,15 +72,16 @@ export default function SignUp(props) {
                     <label
                       htmlFor={input.label}
                       className={`label bg-blue-300 dark:bg-gray-800 ${
-                        !errors[input.name] ?
-                        "group-hover:text-white anime dark:group-hover:text-yellow-300":"text-red-500"
+                        !errors[input.name]
+                          ? "group-hover:text-white anime dark:group-hover:text-yellow-300"
+                          : "text-red-500"
                       }`}
                     >
                       {input.label}
                     </label>
                   </div>
                   <p
-                    className={`err ${
+                    className={`errSignUp pl-2 md:pl-0 md:justify-center ${
                       !errors[input.name] ? "invisible" : "visible"
                     }`}
                   >
@@ -97,11 +99,11 @@ export default function SignUp(props) {
             Register
           </button>
         </form>
-        <div className="p-1 m-1 justify-center">
+        <div className="justify-center pb-2">
           <p className="text-sm text-center">Already have an account?</p>
           <Link
             to="/login"
-            className="flex justify-center w-max m-auto pt-1 italic border-b border-black hover:text-white hover:border-white anime"
+            className="flex justify-center w-max m-auto py-1 italic border-b border-black hover:text-white hover:border-white anime"
           >
             Login here
           </Link>

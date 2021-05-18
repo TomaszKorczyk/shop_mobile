@@ -42,57 +42,61 @@ function App() {
   return (
     <AppContext.Provider value={[isLoggedIn, user]}>
       <ProductsContextProvider>
-        <Navbar />
-        <ScrollToTop />
-        <Switch key={location.pathname} location={location}>
-          {routes.map((route, index) => {
-            if (route.protected === "admin" || user.role === "admin") {
-              return (
-                <AdminRoute
-                  key={index}
-                  path={route.path}
-                  exact={route.exact}
-                  component={route.component}
-                />
-              );
-            }
+        <div className="grid-container">
+          <Navbar />
+          <ScrollToTop />
+          <main>
+            <Switch key={location.pathname} location={location}>
+              {routes.map((route, index) => {
+                if (route.protected === "admin" || user.role === "admin") {
+                  return (
+                    <AdminRoute
+                      key={index}
+                      path={route.path}
+                      exact={route.exact}
+                      component={route.component}
+                    />
+                  );
+                }
 
-            if (route.protected === "user" || user.role === "user") {
-              return (
-                <AuthRoute
-                  key={index}
-                  path={route.path}
-                  exact={route.exact}
-                  component={route.component}
-                />
-              );
-            }
+                if (route.protected === "user" || user.role === "user") {
+                  return (
+                    <AuthRoute
+                      key={index}
+                      path={route.path}
+                      exact={route.exact}
+                      component={route.component}
+                    />
+                  );
+                }
 
-            if (route.protected === "guest" || !isLoggedIn) {
-              return (
-                <GuestRoute
-                  key={index}
-                  path={route.path}
-                  exact={route.exact}
-                  component={route.component}
-                />
-              );
-            }
+                if (route.protected === "guest" || !isLoggedIn) {
+                  return (
+                    <GuestRoute
+                      key={index}
+                      path={route.path}
+                      exact={route.exact}
+                      component={route.component}
+                    />
+                  );
+                }
 
-            return (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                component={route.component}
-              />
-            );
-          })}
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-        <Footer />
+                return (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    exact={route.exact}
+                    component={route.component}
+                  />
+                );
+              })}
+              <Route path="*">
+                <NotFound />
+              </Route>
+            </Switch>
+          </main>
+          <Footer />
+        </div>
       </ProductsContextProvider>
     </AppContext.Provider>
   );

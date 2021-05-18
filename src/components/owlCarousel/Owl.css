@@ -1,8 +1,0 @@
-.img {
-    @apply w-auto;
-    height: 200px;
-}
-
-.owl-theme {
-    @apply bg-blue-300 py-4;
-}

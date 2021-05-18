@@ -45,6 +45,6 @@ select:-webkit-autofill:focus {
     @apply bg-blue-400
 }
 
-.err {
-    @apply text-red-500 text-sm text-center break-words w-5/6 flex justify-center m-auto pt-2
+.errLogin {
+    @apply text-red-500 text-sm break-words w-5/6 flex pt-1
 }

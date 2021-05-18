@@ -36,13 +36,13 @@ export default function Login() {
   }
 
   return (
-    <div className="init">
-      <div className="flex h-full justify-center items-center sm:py-1 lg:py-10 sm:m-auto anime">
-        <div className="bg-blue-300 dark:bg-gray-800 justify-center items-center rounded-md mx-5 grid grid-cols-1 lg:w-1/2 lg:h-full lg:m-auto">
+    <div className="flex justify-center items-center h-full w-full">
+      <div className="flex h-full w-full justify-center items-center py-4 lg:py-10 sm:m-auto anime">
+        <div className="bg-blue-300 dark:bg-gray-800 justify-center items-center rounded-md mx-5 grid grid-cols-1 w-full sm:w-3/4 lg:w-4/6 lg:h-full lg:m-auto">
           <h1 className="text-center text-2xl pb-2 my-2">Login</h1>
           <div className="h-full">
             <form
-              className="block justify-center items-center w-full px-2 lg:w-1/2 lg:m-auto"
+              className="block justify-center items-center w-full px-2 md:w-3/4 md:m-auto lg:w-1/2"
               onSubmit={handleSubmit}
               // autoComplete="off"
             >
@@ -85,7 +85,7 @@ export default function Login() {
                       </div>
                       <div>
                         <p
-                          className={`err ${
+                          className={`errLogin pl-2 md:pl-0 md:justify-center ${
                             !errors[input.name] ? "invisible" : "visible"
                           }`}
                         >
