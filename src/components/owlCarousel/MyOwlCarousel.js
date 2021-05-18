@@ -22,7 +22,7 @@ function MyOwlCarousel() {
       className="bg-blue-300 dark:bg-gray-800 dark:border-white border-t py-4 anime"
       loop
       autoplay
-      dots
+      dots={false}
       margin={40}
       responsive={breakPoints}
     >
@@ -30,7 +30,7 @@ function MyOwlCarousel() {
         return (
           <div className="item" key={index}>
             <img
-              className="w-auto h-16 sm:h-20 md:h-40 lg:h-60"
+              className="w-auto h-32 md:h-40 lg:h-48"
               src={card.img}
               alt={card.title}
             />
